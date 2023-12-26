@@ -1,0 +1,18 @@
+{
+  "name": "expressmysqldemo",
+  "version": "1.0.0",
+  "description": "connecting express app with mysql database",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Smitesh Patil",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.5",
+    "express": "^4.16.4",
+    "mysql2": "^3.6.5",
+    "nodemon": "^1.2.1"
+  }
+}

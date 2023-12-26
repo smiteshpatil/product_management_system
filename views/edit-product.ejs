@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Update Product</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #e1f5e1; /* Light green background */
+        margin: 0;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      form {
+        max-width: 400px;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      label {
+        display: block;
+        margin-bottom: 8px;
+        color: #333;
+      }
+
+      input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 16px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+
+      button {
+        background-color: #4caf50; /* Green button color */
+        color: #fff;
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 100%;
+      }
+
+      button:hover {
+        background-color: #45a049; /* Darker green on hover */
+      }
+    </style>
+  </head>
+
+  <body>
+    <form action="/updateproduct" method="post">
+      <label for="pid">Product ID:</label>
+      <input
+        type="number"
+        name="pid"
+        id="pid"
+        value="<%=prod.pid %>"
+        readonly
+      />
+
+      <label for="pnm">Product Name:</label>
+      <input type="text" name="pname" id="pnm" value="<%=prod.pname %>" />
+
+      <label for="qty">Product Quantity:</label>
+      <input type="text" name="qty" id="qty" value="<%=prod.qty %>" />
+
+      <label for="price">Product Price:</label>
+      <input type="text" name="price" id="price" value="<%=prod.price %>" />
+
+      <button type="submit" name="btn" id="btn">Update Product</button>
+    </form>
+  </body>
+</html>
