@@ -29,3 +29,34 @@ In the process of building this project, I gained insights into the following:
 - **Middleware Usage**: Incorporating middleware like Body-Parser to handle form submissions.
 - **Project Structuring**: Organizing files and structuring the project in a scalable way.
 - **Error Handling**: Implementing basic error handling and displaying user-friendly error messages.
+- 
+## How to Use This Application
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/smiteshpatil/product_management_system.git
+
+2. **Install dependencies:**
+  cd product_management_system
+  npm install
+
+3.**run this script into your mysql client:**
+    - create database test;
+    - use test;
+    - create table products (pid int, pname varchar(50), qty int, price decimal(10,2));
+    
+  
+4. **Configure MySQL settings in db/dbconnect.js or a separate configuration file.**
+   var mysqlConnection = mysql.createConnection({
+   host: "127.0.0.1",
+   user: "MYSQL_USER_NAME",
+   password: "PASSWORD_FOR_MYSQL",
+   port: 3306,
+   database: "test",
+  });
+
+5. **run:**
+   node app.js
+
+6. **The application should be accessible at http://localhost:9090/products**
