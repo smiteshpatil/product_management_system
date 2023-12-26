@@ -39,17 +39,16 @@ In the process of building this project, I gained insights into the following:
       ```
 
 2. **Install dependencies:** 
-   ```bash
+```bash
   cd product_management_system
   npm install
-     ```
+```
 3.**run this script into your mysql client:**
-
-   ```bash
+```bash
    create database test;
    use test;
    create table products (pid int, pname varchar(50), qty int, price decimal(10,2));
-   ``` 
+``` 
   
 4. **Configure MySQL settings in db/dbconnect.js or a separate configuration file.**
 ```
