@@ -37,14 +37,17 @@ In the process of building this project, I gained insights into the following:
    ```bash
    git clone https://github.com/smiteshpatil/product_management_system.git
 
-2. **Install dependencies:**
+2. **Install dependencies:** 
+   ```bash
   cd product_management_system
   npm install
 
 3.**run this script into your mysql client:**
-    - create database test;
-    - use test;
-    - create table products (pid int, pname varchar(50), qty int, price decimal(10,2));
+
+   ```bash
+   create database test;
+   use test;
+   create table products (pid int, pname varchar(50), qty int, price decimal(10,2));
     
   
 4. **Configure MySQL settings in db/dbconnect.js or a separate configuration file.**
@@ -57,6 +60,10 @@ In the process of building this project, I gained insights into the following:
   });
 
 5. **run:**
+
+   ```bash
    node app.js
 
-6. **The application should be accessible at http://localhost:9090/products**
+6. **The application should be accessible at:**
+```bash
+   http://localhost:9090/products
