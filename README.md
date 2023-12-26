@@ -36,21 +36,23 @@ In the process of building this project, I gained insights into the following:
 
    ```bash
    git clone https://github.com/smiteshpatil/product_management_system.git
+      ```
 
 2. **Install dependencies:** 
    ```bash
   cd product_management_system
   npm install
-
+     ```
 3.**run this script into your mysql client:**
 
    ```bash
    create database test;
    use test;
    create table products (pid int, pname varchar(50), qty int, price decimal(10,2));
-    
+   ``` 
   
 4. **Configure MySQL settings in db/dbconnect.js or a separate configuration file.**
+```
    var mysqlConnection = mysql.createConnection({
    host: "127.0.0.1",
    user: "MYSQL_USER_NAME",
@@ -58,12 +60,15 @@ In the process of building this project, I gained insights into the following:
    port: 3306,
    database: "test",
   });
+```
 
-5. **run:**
+6. **run:**
 
    ```bash
    node app.js
+   ```
 
-6. **The application should be accessible at:**
+7. **The application should be accessible at:**
 ```bash
    http://localhost:9090/products
+```
