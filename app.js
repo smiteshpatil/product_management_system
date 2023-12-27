@@ -3,7 +3,6 @@ const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
 const path = require("path");
-const exp = require("constants");
 var routes = require("./routes/router");
 
 //configure the application
